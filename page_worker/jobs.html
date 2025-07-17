@@ -1,0 +1,379 @@
+<!--
+Online HTML, CSS and JavaScript editor to run code online.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Jobs</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <section class="flex">
+    
+    
+          
+        <a href="index.html" class="logo">JobLook</a>
+    
+        <nav class="navbar">
+            <a href="jobs.html">jobs</a>
+            <a href="employers.html">employers</a>
+            <a href="training-center.html">training center</a>
+            <a href="about.html">about us</a>
+            <a href="contact.html">contact us</a> 
+        </nav>
+        
+    
+        <nav class="profile">
+            <a href="profile.html" class="profile"><i class="fa-solid fa-user"></i> &nbsp;profile</a>
+            <div id="menu-btn" class="fas fa-bars fa-lg"></div>
+    
+        </nav>
+        
+        
+        </section>
+      </header>
+<!-- saved jobs starts here -->
+<section class="saved_job">
+    <h1 class="heading"><i class="fa-solid fa-heart"></i> &nbsp;saved jobs</h1>
+    <table id="saved">
+        <tr>
+            <th>Logo</th>
+            <th>Company Name</th>
+            <th>Job Title</th>
+            <th>Salary</th>
+            <th>Date Posted</th>
+        </tr>
+        <tr>
+            <td><img src="../img/php.png" alt=""></td>
+            <td>Sun Life Asia</td>
+            <td>Software Engineer</td>
+            <td>P40,000-60,000</td>
+            <td>05-01-2023</td>
+        </tr>
+        <tr>
+            <td><img src="../img/html.png" alt=""></td>
+            <td>SPI Global</td>
+            <td>Web Developer</td>
+            <td>P100,000-120,000</td>
+            <td>05-12-2023</td>
+        </tr>
+        <tr>
+            <td><img src="../img/php.png" alt=""></td>
+            <td>Kernel Inc.</td>
+            <td>IT Assistant</td>
+            <td>P25,000-30,000</td>
+            <td>06-01-2023</td>
+        </tr>
+    </table>
+</section>
+
+<!-- saved jobs ends here -->
+
+
+<!-- pending jobs starts here -->
+<section class="pending_job">
+    <h1 class="heading"><i class="fa-solid fa-clock"></i>&nbsp;pending jobs</h1>
+    <table id="saved">
+        <tr>
+            <th>Logo</th>
+            <th>Company Name</th>
+            <th>Job Title</th>
+            <th>Notes</th>
+            <th>Salary</th>
+            <th>Applicants</th>
+            <th>Date Applied</th>
+        </tr>
+        <tr>
+            <td><img src="../img/php.png" alt=""></td>
+            <td>Sun Life Asia</td>
+            <td>Software Engineer</td>
+            <td> <span>Employer is actively processing the appicants</span></td>
+            <td>P40,000-60,000</td>
+            <td>23 applicants</td>
+            <td>05-01-2023</td>
+        </tr>
+        <tr>
+            <td><img src="../img/html.png" alt=""></td>
+            <td>SPI Global</td>
+            <td>Web Developer</td>
+            <td> <span>Applied</span></td>
+            <td>P100,000-120,000</td>
+            <td>3 applicants</td>
+            <td>05-12-2023</td>
+        </tr>
+        <tr>
+            <td><img src="../img/php.png" alt=""></td>
+            <td>Kernel Inc.</td>
+            <td>IT Assistant</td>
+            <td> <span>Scheduled Interview</span></td>
+            <td>P25,000-30,000</td>
+            <td>15 applicants</td>
+            <td>06-01-2023</td>
+        </tr>
+    </table>
+
+</section>
+
+
+<!-- pending jobs ends here -->
+
+
+
+<!-- job filter section starts-->
+<section class="job-filter">
+  <h1 class="heading">filter jobs</h1>
+
+  <form action="" method="post">
+      <div class="flex">
+          <div class="box">
+              <p>job title <span>*</span></p>
+              <input type="text" name="title" 
+              placeholder="keyword, category or company" 
+              required maxlength=" 20" class="input">
+          </div>
+          <div class="box">
+              <p>job location</p>
+              <input type="text" name="location" 
+              placeholder="city, state or country" 
+              required maxlength=" 50" class="input">
+          </div>
+      </div>
+      <div class="dropdown-container">
+          <div class="dropdown">
+              <input type="text" readonly placeholder="education"
+              name="educ" maxlength="" class="output">
+              <div class="lists">
+                  <p class="items">bachelor's degree</p>
+                  <p class="items">master's degree</p>
+                  <p class="items">diploma</p>
+                  <p class="items">college level</p>
+                  <p class="items">senior high graduate</p>
+                  <p class="items">junior high graduate</p>
+                  <p class="items">vocational</p>
+              </div>
+          </div>
+          <div class="dropdown">
+                  <input type="text" readonly placeholder="job type"
+                  name="sched" maxlength="" class="output">
+              <div class="lists">
+                  <p class="items">full-time</p>
+                  <p class="items">part-time</p>
+                  <p class="items">internship</p>
+                  <p class="items">contract</p>
+                  <p class="items">temporary</p>
+                  <p class="items">fresher</p>
+              </div>
+          </div>
+          <div class="dropdown">
+                  <input type="text" readonly placeholder="estimated salary"
+                  name="salary" maxlength="" class="output">
+              <div class="lists">
+                  <p class="items">P15k or less</p>
+                  <p class="items">P15k - 20k</p>
+                  <p class="items">P20k - 25k</p>
+                  <p class="items">P25k - 30k</p>
+                  <p class="items">P30k - 40k</p>
+                  <p class="items">P40k - 50k</p>
+                  <p class="items">P50k or more</p>
+              </div>
+          </div>
+          <div class="dropdown">
+              <input type="text" readonly placeholder="date posted"
+              name="date" maxlength="" class="output">
+              <div class="lists">
+                  <p class="items">today</p>
+                  <p class="items">3 days ago</p>
+                  <p class="items">7 days ago</p>
+                  <p class="items">10 days ago</p>
+                  <p class="items">15 days ago</p>
+                  <p class="items">30 days ago</p>
+              </div>
+          </div>
+          <div class="dropdown">
+              <input type="text" readonly placeholder="work shift"
+              name="date" maxlength="" class="output">
+              <div class="lists">
+                  <p class="items">day shift</p>
+                  <p class="items">night shift</p>
+                  <p class="items">mid shift</p>
+                  <p class="items">hybrid</p>
+                  <p class="items">remote</p>
+              </div>
+          </div>
+      </div>
+  </form>
+</section>
+<!-- job filter section ends-->
+
+<!-- job section starts here -->
+
+<section class="job-container">
+  <h1 class="heading">all jobs</h1>
+  <div class="box-container">
+
+      <div class="box">
+          <div class="company">
+              <img src="../img/html.png" alt="">
+              <div>
+                  <h3>IT infosys co.</h3>
+                  <p>2 days ago</p>
+              </div>
+          </div>
+          <h3 class="job-title">senior web developer</h3>
+          <p class="location"><i class="fas fa-map-marker-alt"></i>
+              <span>manila, philippines</span></p>
+              <div class="tags">
+                  <p><i class="fa-solid fa-peso-sign"></i>
+                      <span>10k - 25k</span>
+                  </p>
+                  <p><i class="fa-solid fa-briefcase"></i>
+                  <span>part-time</span></p>
+                  <p><i class="fa-solid fa-clock"></i>
+                      <span>day shift</span></p>
+              </div>
+              <div class="flex-btn">
+                  <a href="view_job.html" class="btn">view details</a>
+                  <button  class="fa-regular fa-heart"></button>
+              </div>
+      </div>
+
+      <div class="box">
+          <div class="company">
+              <img src="../img/php.png" alt="">
+              <div>
+                  <h3>IT infosys co.</h3>
+                  <p>2 days ago</p>
+              </div>
+          </div>
+          <h3 class="job-title">full-stack web developer</h3>
+          <p class="location"><i class="fas fa-map-marker-alt"></i>
+              <span>manila, philippines</span></p>
+              <div class="tags">
+                  <p><i class="fa-solid fa-peso-sign"></i>
+                      <span>20k - 35k</span>
+                  </p>
+                  <p><i class="fa-solid fa-briefcase"></i>
+                  <span>full-time</span></p>
+                  <p><i class="fa-solid fa-clock"></i>
+                      <span>night shift</span></p>
+              </div>
+              <div class="flex-btn">
+                  <a href="view_job.html" class="btn">view details</a>
+                  <button  class="fa-regular fa-heart"></button>
+              </div>
+      </div>
+
+      <div class="box">
+          <div class="company">
+              <img src="../img/San-Miguel.png" alt="">
+              <div>
+                  <h3>San Miguel Co.</h3>
+                  <p>1 day ago</p>
+              </div>
+          </div>
+          <h3 class="job-title">Sales manager</h3>
+          <p class="location"><i class="fas fa-map-marker-alt"></i>
+              <span>pampanga, philippines</span></p>
+              <div class="tags">
+                  <p><i class="fa-solid fa-peso-sign"></i>
+                      <span>15k - 20k</span>
+                  </p>
+                  <p><i class="fa-solid fa-briefcase"></i>
+                  <span>full-time</span></p>
+                  <p><i class="fa-solid fa-clock"></i>
+                      <span>day shift</span></p>
+              </div>
+              <div class="flex-btn">
+                  <a href="view_job.html" class="btn">view details</a>
+                  <button  class="fa-regular fa-heart"></button>
+              </div>
+      </div>
+
+      <div class="box">
+          <div class="company">
+              <img src="../img/amazon.png" alt="">
+              <div>
+                  <h3>Amazon</h3>
+                  <p>3 days ago</p>
+              </div>
+          </div>
+          <h3 class="job-title">Virtual Assistant</h3>
+          <p class="location"><i class="fas fa-map-marker-alt"></i>
+              <span>manila, philippines</span></p>
+              <div class="tags">
+                  <p><i class="fa-solid fa-peso-sign"></i>
+                      <span>15k - 20k</span>
+                  </p>
+                  <p><i class="fa-solid fa-briefcase"></i>
+                  <span>full-time</span></p>
+                  <p><i class="fa-solid fa-clock"></i>
+                      <span>day shift</span></p>
+              </div>
+              <div class="flex-btn">
+                  <a href="view_job.html" class="btn">view details</a>
+                  <button  class="fa-regular fa-heart"></button>
+              </div>
+      </div>
+
+
+  </div>
+  
+</section>
+
+<!-- job section ends here -->
+
+
+
+  <!-- footer section starts here -->
+<footer class="footer">
+  <section class="grid">
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="index.html"><i class="fas fa-angle-right"></i>home</a>
+          <a href="about.html"><i class="fas fa-angle-right"></i>about us</a>
+          <a href="jobs.html"><i class="fas fa-angle-right"></i>all jobs</a>
+          <a href="contact.html"><i class="fas fa-angle-right"></i>contact us</a>
+          <a href="#"><i class="fas fa-angle-right"></i>filter search</a>
+      </div>
+      <div class="box">
+          <h3>extra links</h3>
+          <a href="#"><i class="fas fa-angle-right"></i>account</a>
+          <a href="login.html"><i class="fas fa-angle-right"></i>login</a>
+          <a href="register.html"><i class="fas fa-angle-right"></i>register</a>
+          <a href="#"><i class="fas fa-angle-right"></i>post job</a>
+          <a href="#"><i class="fas fa-angle-right"></i>dashboard</a>
+      </div>
+      <div class="box">
+          <h3>follow us</h3>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i>facebook</a>
+          <a href="#"><i class="fa-brands fa-twitter"></i>twitter</a>
+          <a href="#"><i class="fa-brands fa-instagram"></i>instagram</a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i>linkedin</a>
+          <a href="#"><i class="fa-brands fa-youtube"></i>youtube</a>
+      </div>
+  </section>
+  <div class="credit">&copy; copyright @2023 by <span>ms. louan</span> | all rights reserve</div>
+</footer>
+<script src="../js/script.js"></script>
+
+<script>
+    let dropdown_items = document.querySelectorAll('.job-filter form .dropdown-container .dropdown .lists .items');
+
+    dropdown_items.forEach(items =>{
+        items.onclick = () =>{
+            items_parent = items.parentElement.parentElement;
+            let output = items_parent.querySelector('.output');
+            output.value = items.innerText;
+        }
+    });
+</script>
+
+</body>
+
+</html>

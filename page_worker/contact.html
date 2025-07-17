@@ -1,0 +1,152 @@
+<!-- 
+Online HTML, CSS and JavaScript editor to run code online.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Employers</title>
+</head>
+
+<body>
+ 
+  <header class="header">
+
+    <section class="flex">
+
+
+      
+    <a href="index.html" class="logo">JobLook</a>
+
+    <nav class="navbar">
+        <a href="jobs.html">jobs</a>
+        <a href="employers.html">employers</a>
+        <a href="training-center.html">training center</a>
+        <a href="about.html">about us</a>
+        <a href="contact.html">contact us</a> 
+    </nav>
+    
+
+    <nav class="profile">
+        <a href="profile.html" class="profile"><i class="fa-solid fa-user"></i> &nbsp;profile</a>
+        <div id="menu-btn" class="fas fa-bars fa-lg"></div>
+
+    </nav>
+    
+    
+    </section>
+  </header>
+
+
+  <!-- contact us section starts here -->
+
+<div class="section-title">contact us</div>
+
+<section class="contact">
+  
+
+  <div class="box-container">
+    <div class="box">
+      <i class="fa-solid fa-phone"></i>
+      <a href="tel:1234567890">123-456-7890</a>
+      <a href="tel:1112223333">111-222-3333</a>
+    </div>
+  
+    <div class="box">
+      <i class="fa-solid fa-envelope"></i>
+      <a href="mailto:joblook@email.com">joblook@email.com</a>
+      <a href="mailto:pampanga@tesda.gov.ph">pampanga@tesda.gov.ph</a>
+    </div>
+  
+    <div class="box">
+      <i class="fa-solid fa-map-location-dot"></i>
+      <a href="#"> Brgy. San Juan City of San Fernando Pampanga </a>
+    </div>
+  </div>
+ 
+ 
+<form action="" method="post">
+  <h3>drop your message</h3>
+  <div class="flex">
+    <div class="box">
+      <p>name <span>*</span></p>
+      <input type="text" name="name" required maxlength="25" placeholder="enter you name" class="input">
+    </div>
+    <div class="box">
+      <p>email <span>*</span></p>
+      <input type="email" name="name" required maxlength="50" placeholder="enter you email" class="input">
+    </div>
+    <div class="box">
+      <p>number <span>*</span></p>
+      <input type="number" name="number" required min="0" max="9999999999" maxlength="20"  placeholder="enter you name" class="input">
+    </div>
+    <div class="box">
+      <p>role <span>*</span></p>
+      <select name="role" required class="input">
+        <option value="employee">job seeker (employee)</option>
+        <option value="employer">job provider (employer)</option>
+      </select>
+    </div>
+  </div>
+  <p>message <span>*</span></p>
+  <textarea name="message" class="input" required maxlength="1000" id="" cols="30" rows="10"></textarea>
+  <input type="submit" value="send message" name="send" class="btn">
+</form>
+
+
+
+</section>
+
+  <!-- contact us section ends here -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- footer section starts here -->
+<footer class="footer">
+  <section class="grid">
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="index.html"><i class="fas fa-angle-right"></i>home</a>
+          <a href="about.html"><i class="fas fa-angle-right"></i>about us</a>
+          <a href="jobs.html"><i class="fas fa-angle-right"></i>all jobs</a>
+          <a href="contact.html"><i class="fas fa-angle-right"></i>contact us</a>
+          <a href="#"><i class="fas fa-angle-right"></i>filter search</a>
+      </div>
+      <div class="box">
+          <h3>extra links</h3>
+          <a href="#"><i class="fas fa-angle-right"></i>account</a>
+          <a href="login.html"><i class="fas fa-angle-right"></i>login</a>
+          <a href="register.html"><i class="fas fa-angle-right"></i>register</a>
+          <a href="#"><i class="fas fa-angle-right"></i>post job</a>
+          <a href="#"><i class="fas fa-angle-right"></i>dashboard</a>
+      </div>
+      <div class="box">
+          <h3>follow us</h3>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i>facebook</a>
+          <a href="#"><i class="fa-brands fa-twitter"></i>twitter</a>
+          <a href="#"><i class="fa-brands fa-instagram"></i>instagram</a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i>linkedin</a>
+          <a href="#"><i class="fa-brands fa-youtube"></i>youtube</a>
+      </div>
+  </section>
+  <div class="credit">&copy; copyright @2023 by <span>ms. louan</span> | all rights reserve</div>
+</footer>
+  
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

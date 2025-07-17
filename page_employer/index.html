@@ -1,0 +1,406 @@
+<!--
+Online HTML, CSS and JavaScript editor to run code online.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Browser</title>
+</head>
+
+<body>
+  <header class="header">
+
+    <section class="flex">
+
+      <div id="menu-btn" class="fas fa-bars fa-lg"></div>
+      
+      <a href="index.html" class="logo">JobLook</a>
+      <nav class="navbar">
+        <a href="jobs.html">jobs</a>
+        <a href="employers.html">employers</a>
+        <a href="about.html">about us</a>
+        <a href="contact.html">contact us</a>
+        <a href="register.html">register</a>
+        <a href="signin.html" class="btn-navbar">sign in</a>
+    </nav>
+      
+
+    </section>
+  </header>
+  <!-- header section ends -->
+
+  <!-- home section starts here -->
+<div class="home-container">
+    <section class="home">
+        <form action="" method="post">
+          <h3>Look for jobs around Pampanga </h3>
+          <div class="flex-row">
+            <div class="box">
+              <p>job title <span>*</span></p>
+            <input type="text" name="title"
+            placeholder="keyword, category or company"
+            required maxlength=" 20" class="input">
+            </div>
+            <div class="box">
+              <p>job location</p>
+            <input type="text" name="location"
+            placeholder="city, barangay or street"
+            required maxlength=" 50" class="input">
+            </div>
+            <div class="box">
+              <p> </p>
+              <input type="submit" value="Search Job" class="submit btn">
+            </div>
+          </div>
+        </form>
+    </section>
+</div>
+
+<!-- home section ends here -->
+
+
+
+
+<!--category section starts here-->
+<section class="category">
+  <h1 class="heading">job categories</h1>
+  <div class="box-container">
+
+      <a href="#" class="box">
+        <i class="fa-solid fa-pen-nib"></i>
+              <div>
+                  <h3>design & multimedia</h3>
+                  <span>1968 jobs</span>
+              </div>
+      </a>
+      <a href="#" class="box">
+          <i class="fas fa-code"></i>
+              <div>
+                  <h3>web development</h3>
+                  <span>2200 jobs</span>
+              </div>
+      </a>
+      <a href="#" class="box">
+        <i class="fa-solid fa-pen-to-square"></i>
+              <div>
+                  <h3>writing & content</h3>
+                  <span>597 jobs</span>
+              </div>
+      </a>
+      <a href="#" class="box">
+        <i class="fa-solid fa-lock"></i>
+              <div>
+                  <h3>administrative support</h3>
+                  <span>1347 jobs</span>
+              </div>
+      </a>
+      <a href="#" class="box">
+        <i class="fa-solid fa-coins"></i>
+              <div>
+                  <h3>accountancy & banking</h3>
+                  <span>2180 jobs</span>
+              </div>
+      </a>
+      <a href="#" class="box">
+        <i class="fa-solid fa-building"></i>
+              <div>
+                  <h3>business & finance</h3>
+                  <span>1209 jobs</span>
+              </div>
+      </a>
+      <a href="#" class="box">
+        <i class="fa-solid fa-chart-line"></i>
+              <div>
+                  <h3>sales & marketing</h3>
+                  <span>1805 jobs</span>
+              </div>
+      </a>
+      <a href="#" class="box">
+        <i class="fa-solid fa-headphones"></i>
+              <div>
+                  <h3>customer service</h3>
+                  <span>200 jobs</span>
+              </div>
+      </a>
+  </div>
+</section>
+<!--category section ends here-->
+
+
+<!-- jobs section starts here -->
+<section class="job-container">
+    <h1 class="heading"> recent jobs</h1>
+  <div class="box-container">
+
+      <div class="box">
+          <div class="company">
+              <img src="./img/html.png" alt="">
+              <div>
+                  <h3>IT infosys co.</h3>
+                  <p>2 days ago</p>
+              </div>
+          </div>
+          <h3 class="job-title">senior web developer</h3>
+          <p class="location"><i class="fas fa-map-marker-alt"></i>
+              <span>manila, philippines</span></p>
+              <div class="tags">
+                  <p><i class="fa-solid fa-peso-sign"></i>
+                      <span>10k - 25k</span>
+                  </p>
+                  <p><i class="fa-solid fa-briefcase"></i>
+                  <span>part-time</span></p>
+                  <p><i class="fa-solid fa-clock"></i>
+                      <span>day shift</span></p>
+              </div>
+              <div class="flex-btn">
+                  <a href="view_job.html" class="btn">view details</a>
+                  <button  class="fa-regular fa-heart"></button>
+              </div>
+      </div>
+
+      <div class="box">
+          <div class="company">
+              <img src="./img/php.png" alt="">
+              <div>
+                  <h3>IT infosys co.</h3>
+                  <p>2 days ago</p>
+              </div>
+          </div>
+          <h3 class="job-title">full-stack web developer</h3>
+          <p class="location"><i class="fas fa-map-marker-alt"></i>
+              <span>manila, philippines</span></p>
+              <div class="tags">
+                  <p><i class="fa-solid fa-peso-sign"></i>
+                      <span>20k - 35k</span>
+                  </p>
+                  <p><i class="fa-solid fa-briefcase"></i>
+                  <span>full-time</span></p>
+                  <p><i class="fa-solid fa-clock"></i>
+                      <span>night shift</span></p>
+              </div>
+              <div class="flex-btn">
+                  <a href="view_job.html" class="btn">view details</a>
+                  <button  class="fa-regular fa-heart"></button>
+              </div>
+      </div>
+
+      <div class="box">
+          <div class="company">
+              <img src="./img/San-Miguel.png" alt="">
+              <div>
+                  <h3>San Miguel Co.</h3>
+                  <p>1 day ago</p>
+              </div>
+          </div>
+          <h3 class="job-title">Sales manager</h3>
+          <p class="location"><i class="fas fa-map-marker-alt"></i>
+              <span>pampanga, philippines</span></p>
+              <div class="tags">
+                  <p><i class="fa-solid fa-peso-sign"></i>
+                      <span>15k - 20k</span>
+                  </p> 
+                  <p><i class="fa-solid fa-briefcase"></i>
+                  <span>full-time</span></p>
+                  <p><i class="fa-solid fa-clock"></i>
+                      <span>day shift</span></p>
+              </div>
+              <div class="flex-btn">
+                  <a href="view_job.html" class="btn">view details</a>
+                  <button  class="fa-regular fa-heart"></button>
+              </div>
+      </div>
+
+      <div class="box">
+          <div class="company">
+              <img src="./img/amazon.png" alt="">
+              <div>
+                  <h3>Amazon</h3>
+                  <p>3 days ago</p>
+              </div>
+          </div>
+          <h3 class="job-title">Virtual Assistant</h3>
+          <p class="location"><i class="fas fa-map-marker-alt"></i>
+              <span>manila, philippines</span></p>
+              <div class="tags">
+                  <p><i class="fa-solid fa-peso-sign"></i>
+                      <span>15k - 20k</span>
+                  </p>
+                  <p><i class="fa-solid fa-briefcase"></i>
+                  <span>full-time</span></p>
+                  <p><i class="fa-solid fa-clock"></i>
+                      <span>day shift</span></p>
+              </div>
+              <div class="flex-btn">
+                  <a href="view_job.html" class="btn">view details</a>
+                  <button  class="fa-regular fa-heart"></button>
+              </div>
+      </div>
+
+      <div class="box">
+        <div class="company">
+            <img src="./img/html.png" alt="">
+            <div>
+                <h3>IT infosys co.</h3>
+                <p>2 days ago</p>
+            </div>
+        </div>
+        <h3 class="job-title">senior web developer</h3>
+        <p class="location"><i class="fas fa-map-marker-alt"></i>
+            <span>manila, philippines</span></p>
+            <div class="tags">
+                <p><i class="fa-solid fa-peso-sign"></i>
+                    <span>10k - 25k</span>
+                </p>
+                <p><i class="fa-solid fa-briefcase"></i>
+                <span>part-time</span></p>
+                <p><i class="fa-solid fa-clock"></i>
+                    <span>day shift</span></p>
+            </div>
+            <div class="flex-btn">
+                <a href="view_job.html" class="btn">view details</a>
+                <button  class="fa-regular fa-heart"></button>
+            </div>
+    </div>
+
+    <div class="box">
+        <div class="company">
+            <img src="./img/php.png" alt="">
+            <div>
+                <h3>IT infosys co.</h3>
+                <p>2 days ago</p>
+            </div>
+        </div>
+        <h3 class="job-title">full-stack web developer</h3>
+        <p class="location"><i class="fas fa-map-marker-alt"></i>
+            <span>manila, philippines</span></p>
+            <div class="tags">
+                <p><i class="fa-solid fa-peso-sign"></i>
+                    <span>20k - 35k</span>
+                </p>
+                <p><i class="fa-solid fa-briefcase"></i>
+                <span>full-time</span></p>
+                <p><i class="fa-solid fa-clock"></i>
+                    <span>night shift</span></p>
+            </div>
+            <div class="flex-btn">
+                <a href="view_job.html" class="btn">view details</a>
+                <button  class="fa-regular fa-heart"></button>
+            </div>
+    </div>
+
+
+  </div>
+
+  <div style="text-align: center; margin-top: 2rem;">
+      <a href="jobs.html" class="btn">view all</a>
+  </div>
+</section>
+<!-- jobs section ends here -->
+
+
+
+<!-- employers section starts here -->
+
+<section class="co-container">
+    <h1 class="heading">companies and employers</h1>
+    <div class="box-container">
+  
+        <button onclick="window.location.href='view_company.html'" class="box">
+            <div class="company">
+                <img src="./img/html.png" alt="">
+                <div>
+                    <a href="view_company.html">IT Infosys co.</a>
+                    <p>Angeles City Pampanga</p>
+                </div>
+            </div>
+        </button>
+  
+        <button onclick="window.location.href='view_company.html'" class="box">
+          <div class="company">
+              <img src="./img/php.png" alt="">
+              <div>
+                  <a href="view_company.html">IT Infosys co.</a>
+                  <p>Clark Pampanga</p>
+              </div>
+          </div>
+      </button>
+  
+      <button onclick="window.location.href='view_company.html'" class="box">
+        <div class="company">
+            <img src="./img/ayala.png" alt="">
+            <div>
+                <a href="view_company.html">Ayala</a>
+                <p>Angeles City Pampanga</p>
+            </div>
+        </div>
+    </button>
+  
+    <button onclick="window.location.href='view_company.html'" class="box">
+      <div class="company">
+          <img src="./img/San-Miguel.png" alt="">
+          <div>
+              <a href="view_company.html">San Miguel Inc.</a>
+              <p>San Fernando City Pampanga</p>
+          </div>
+      </div>
+  </button>
+  
+  <button onclick="window.location.href='view_company.html'" class="box">
+    <div class="company">
+        <img src="./img/amazon.png" alt="">
+        <div>
+            <a href="view_company.html">Amazon</a>
+            <p>Angeles City Pampanga</p>
+        </div>
+    </div>
+  </button>
+  
+    </div>
+
+    <div style="text-align: center; margin-top: 2rem;">
+        <a href="jobs.html" class="btn">view all</a>
+    </div>
+    
+  </section>
+  
+  <!-- employers section ends here -->
+
+  <!-- footer section starts here -->
+<footer class="footer">
+  <section class="grid">
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="index.html"><i class="fas fa-angle-right"></i>home</a>
+          <a href="about.html"><i class="fas fa-angle-right"></i>about us</a>
+          <a href="jobs.html"><i class="fas fa-angle-right"></i>all jobs</a>
+          <a href="contact.html"><i class="fas fa-angle-right"></i>contact us</a>
+          <a href="#"><i class="fas fa-angle-right"></i>filter search</a>
+      </div>
+      <div class="box">
+          <h3>extra links</h3>
+          <a href="#"><i class="fas fa-angle-right"></i>account</a>
+          <a href="login.html"><i class="fas fa-angle-right"></i>login</a>
+          <a href="register.html"><i class="fas fa-angle-right"></i>register</a>
+          <a href="#"><i class="fas fa-angle-right"></i>post job</a>
+          <a href="#"><i class="fas fa-angle-right"></i>dashboard</a>
+      </div>
+      <div class="box">
+          <h3>follow us</h3>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i>facebook</a>
+          <a href="#"><i class="fa-brands fa-twitter"></i>twitter</a>
+          <a href="#"><i class="fa-brands fa-instagram"></i>instagram</a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i>linkedin</a>
+          <a href="#"><i class="fa-brands fa-youtube"></i>youtube</a>
+      </div>
+  </section>
+  <div class="credit">&copy; copyright @2023 by <span>ms. louan</span> | all rights reserve</div>
+</footer>
+  
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
